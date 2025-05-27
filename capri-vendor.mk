@@ -113,6 +113,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/capri/proprietary/vendor/etc/thermal-engine-capri-5000.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-capri-5000.conf \
     vendor/motorola/capri/proprietary/vendor/etc/thermal-engine-capri-6000.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-capri-6000.conf \
     vendor/motorola/capri/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    vendor/motorola/capri/proprietary/vendor/etc/vhw.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vhw.xml \
     vendor/motorola/capri/proprietary/vendor/firmware/ILITEK_FW_TM_9882N:$(TARGET_COPY_OUT_VENDOR)/firmware/ILITEK_FW_TM_9882N \
     vendor/motorola/capri/proprietary/vendor/firmware/ILITEK_FW_TXD_7806S:$(TARGET_COPY_OUT_VENDOR)/firmware/ILITEK_FW_TXD_7806S \
     vendor/motorola/capri/proprietary/vendor/firmware/ILITEK_FW_TXD_9882H:$(TARGET_COPY_OUT_VENDOR)/firmware/ILITEK_FW_TXD_9882H \
@@ -150,6 +151,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libthermalclient \
+    cnss-daemon \
     com.mot.eeprom.mot_capri_s5k4h7_front_otp \
     com.mot.eeprom.mot_capri_s5k4h7_otp \
     com.mot.eeprom.mot_dw9767_s5kgm1st_actuator \
