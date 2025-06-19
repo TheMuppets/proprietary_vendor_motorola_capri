@@ -151,6 +151,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libthermalclient \
+    capsense_reset \
     cnss-daemon \
     com.mot.eeprom.mot_capri_s5k4h7_front_otp \
     com.mot.eeprom.mot_capri_s5k4h7_otp \
