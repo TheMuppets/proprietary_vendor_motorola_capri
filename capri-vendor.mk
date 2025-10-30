@@ -151,8 +151,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     libthermalclient \
-    capsense_reset \
-    cnss-daemon \
     com.mot.eeprom.mot_capri_s5k4h7_front_otp \
     com.mot.eeprom.mot_capri_s5k4h7_otp \
     com.mot.eeprom.mot_dw9767_s5kgm1st_actuator \
@@ -281,6 +279,8 @@ PRODUCT_PACKAGES += \
     libvidhance_fbc \
     libvidhance_horizon_correction \
     libvidhance_stabilizer \
+    capsense_reset \
+    cnss-daemon \
     android.hardware.biometrics.fingerprint@2.1-service-chipone \
     android.hardware.biometrics.fingerprint@2.1-service-fpc \
     fpc_ident \

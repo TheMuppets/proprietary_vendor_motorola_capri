@@ -4021,6 +4021,66 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_binary {
+    name: "capsense_reset",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/capsense_reset",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libhardware_legacy",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "cnss-daemon",
+    owner: "motorola",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/cnss-daemon",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libqmi_cci",
+                "libqmi_common_so",
+                "libnl",
+                "libcld80211",
+                "libperipheral_client",
+                "libmdmdetect",
+                "libqmiservices",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service-chipone",
     owner: "motorola",
     target: {
@@ -4085,66 +4145,6 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "capsense_reset",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/capsense_reset",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libhardware_legacy",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "cnss-daemon",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/cnss-daemon",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libnl",
-                "libcld80211",
-                "libperipheral_client",
-                "libmdmdetect",
-                "libqmiservices",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
     soc_specific: true,
 }
 
